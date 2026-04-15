@@ -1,0 +1,1652 @@
+[
+  {
+    "name": "Flayer Jewel [3]",
+    "description": "A decoration that grants the Flayer skill.",
+    "value": 250,
+    "slot": 3,
+    "rarity": 5,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 38,
+          "name": "Flayer"
+        },
+        "level": 1,
+        "description": "Makes it ever so slightly easier to inflict wounds. Also deals additional non-elemental damage.",
+        "id": 88
+      }
+    ],
+    "icon": {
+      "color": "white",
+      "colorId": 1
+    },
+    "id": 3,
+    "gameId": -2135118208
+  },
+  {
+    "name": "Water Res Jewel [1]",
+    "description": "A decoration that grants the Water Resistance skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 84,
+          "name": "Water Resistance"
+        },
+        "level": 1,
+        "description": "Water resistance +6",
+        "id": 207
+      }
+    ],
+    "icon": {
+      "color": "blue",
+      "colorId": 17
+    },
+    "id": 8,
+    "gameId": -1958732416
+  },
+  {
+    "name": "Destroyer Jewel [2]",
+    "description": "A decoration that grants the Partbreaker skill.",
+    "value": 200,
+    "slot": 2,
+    "rarity": 4,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 129,
+          "name": "Partbreaker"
+        },
+        "level": 1,
+        "description": "Increases part damage and damage dealt when conditions are met by 10%.",
+        "id": 338
+      }
+    ],
+    "icon": {
+      "color": "gray",
+      "colorId": 2
+    },
+    "id": 11,
+    "gameId": -1911376000
+  },
+  {
+    "name": "Escape Jewel [1]",
+    "description": "A decoration that grants the Bind Resistance skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 147,
+          "name": "Bind Resistance"
+        },
+        "level": 1,
+        "description": "Allows you to quickly recover from webbed status or frostblight.",
+        "id": 388
+      }
+    ],
+    "icon": {
+      "color": "white",
+      "colorId": 1
+    },
+    "id": 13,
+    "gameId": -1898312320
+  },
+  {
+    "name": "Suture Jewel [1]",
+    "description": "A decoration that grants the Bleeding Resistance skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 146,
+          "name": "Bleeding Resistance"
+        },
+        "level": 1,
+        "description": "Reduces damage while bleeding.",
+        "id": 385
+      }
+    ],
+    "icon": {
+      "color": "ivory",
+      "colorId": 9
+    },
+    "id": 19,
+    "gameId": -1808385664
+  },
+  {
+    "name": "Fire Res Jewel [1]",
+    "description": "A decoration that grants the Fire Resistance skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 125,
+          "name": "Fire Resistance"
+        },
+        "level": 1,
+        "description": "Fire resistance +6",
+        "id": 327
+      }
+    ],
+    "icon": {
+      "color": "red",
+      "colorId": 5
+    },
+    "id": 20,
+    "gameId": -1801961088
+  },
+  {
+    "name": "Hungerless Jewel [1]",
+    "description": "A decoration that grants the Hunger Resistance skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 151,
+          "name": "Hunger Resistance"
+        },
+        "level": 1,
+        "description": "Extends the time until your stamina cap reduces by 50%.",
+        "id": 395
+      }
+    ],
+    "icon": {
+      "color": "brown",
+      "colorId": 8
+    },
+    "id": 23,
+    "gameId": -1775008128
+  },
+  {
+    "name": "Specimen Jewel [1]",
+    "description": "A decoration that grants the Entomologist skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 114,
+          "name": "Entomologist"
+        },
+        "level": 1,
+        "description": "Activates skill effect.",
+        "id": 291
+      }
+    ],
+    "icon": {
+      "color": "moss-green",
+      "colorId": 13
+    },
+    "id": 26,
+    "gameId": -1749412352
+  },
+  {
+    "name": "Mirewalker Jewel [1]",
+    "description": "A decoration that grants the Aquatic/Oilsilt Mobility skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 63,
+          "name": "Aquatic/Oilsilt Mobility"
+        },
+        "level": 1,
+        "description": "Negates the effects of muddy streams, nullifies slowing from water and oilsilt, and reduces slowing from drakesbone oil.",
+        "id": 154
+      }
+    ],
+    "icon": {
+      "color": "gray",
+      "colorId": 2
+    },
+    "id": 28,
+    "gameId": -1726768640
+  },
+  {
+    "name": "Foray Jewel [3]",
+    "description": "A decoration that grants the Foray skill.",
+    "value": 250,
+    "slot": 3,
+    "rarity": 5,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 75,
+          "name": "Foray"
+        },
+        "level": 1,
+        "description": "Attack +6 against large monsters affected by poison or paralysis.",
+        "id": 182
+      }
+    ],
+    "icon": {
+      "color": "red",
+      "colorId": 5
+    },
+    "id": 39,
+    "gameId": -1645940096
+  },
+  {
+    "name": "Def Lock Jewel [1]",
+    "description": "A decoration that grants the Iron Skin skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 135,
+          "name": "Iron Skin"
+        },
+        "level": 1,
+        "description": "Reduces the duration of defense down by 50%.",
+        "id": 352
+      }
+    ],
+    "icon": {
+      "color": "ivory",
+      "colorId": 9
+    },
+    "id": 41,
+    "gameId": -1626218240
+  },
+  {
+    "name": "Mighty Jewel [2]",
+    "description": "A decoration that grants the Maximum Might skill.",
+    "value": 200,
+    "slot": 2,
+    "rarity": 4,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 99,
+          "name": "Maximum Might"
+        },
+        "level": 1,
+        "description": "Affinity +10% while active",
+        "id": 246
+      }
+    ],
+    "icon": {
+      "color": "red",
+      "colorId": 5
+    },
+    "id": 47,
+    "gameId": -1550869760
+  },
+  {
+    "name": "Jumping Jewel [2]",
+    "description": "A decoration that grants the Evade Extender skill.",
+    "value": 200,
+    "slot": 2,
+    "rarity": 4,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 102,
+          "name": "Evade Extender"
+        },
+        "level": 1,
+        "description": "Slightly extends evasion distance.",
+        "id": 255
+      }
+    ],
+    "icon": {
+      "color": "sky",
+      "colorId": 16
+    },
+    "id": 52,
+    "gameId": -1485261696
+  },
+  {
+    "name": "Recovery Jewel [1]",
+    "description": "A decoration that grants the Recovery Speed skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 31,
+          "name": "Recovery Speed"
+        },
+        "level": 1,
+        "description": "Doubles the speed at which you heal recoverable damage.",
+        "id": 69
+      }
+    ],
+    "icon": {
+      "color": "green",
+      "colorId": 14
+    },
+    "id": 56,
+    "gameId": -1449268352
+  },
+  {
+    "name": "Pep Jewel [1]",
+    "description": "A decoration that grants the Sleep Resistance skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 64,
+          "name": "Sleep Resistance"
+        },
+        "level": 1,
+        "description": "Reduces the duration of sleep by 30%.",
+        "id": 156
+      }
+    ],
+    "icon": {
+      "color": "sky",
+      "colorId": 16
+    },
+    "id": 57,
+    "gameId": -1434375936
+  },
+  {
+    "name": "Dragon Res Jewel [1]",
+    "description": "A decoration that grants the Dragon Resistance skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 1,
+          "name": "Dragon Resistance"
+        },
+        "level": 1,
+        "description": "Dragon resistance +6",
+        "id": 1
+      }
+    ],
+    "icon": {
+      "color": "rose",
+      "colorId": 3
+    },
+    "id": 58,
+    "gameId": -1416808832
+  },
+  {
+    "name": "Sane Jewel [1]",
+    "description": "A decoration that grants the Antivirus skill.",
+    "value": 250,
+    "slot": 1,
+    "rarity": 5,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 18,
+          "name": "Antivirus"
+        },
+        "level": 1,
+        "description": "Slightly increases recovery rate after contracting the Frenzy. Affinity +3% if cured.",
+        "id": 43
+      }
+    ],
+    "icon": {
+      "color": "purple",
+      "colorId": 20
+    },
+    "id": 59,
+    "gameId": -1401571456
+  },
+  {
+    "name": "Earplugs Jewel [2]",
+    "description": "A decoration that grants the Earplugs skill.",
+    "value": 200,
+    "slot": 2,
+    "rarity": 4,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 80,
+          "name": "Earplugs"
+        },
+        "level": 1,
+        "description": "Reduces the effects of weak monster roars.",
+        "id": 197
+      }
+    ],
+    "icon": {
+      "color": "white",
+      "colorId": 1
+    },
+    "id": 62,
+    "gameId": -1392648576
+  },
+  {
+    "name": "Physique Jewel [1]",
+    "description": "A decoration that grants the Constitution skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 14,
+          "name": "Constitution"
+        },
+        "level": 1,
+        "description": "Reduces fixed stamina depletion by 10%.",
+        "id": 31
+      }
+    ],
+    "icon": {
+      "color": "brown",
+      "colorId": 8
+    },
+    "id": 63,
+    "gameId": -1381641984
+  },
+  {
+    "name": "Survival Jewel [1]",
+    "description": "A decoration that grants the Survival Expert skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 48,
+          "name": "Survival Expert"
+        },
+        "level": 1,
+        "description": "Restores 50 health.",
+        "id": 114
+      }
+    ],
+    "icon": {
+      "color": "white",
+      "colorId": 1
+    },
+    "id": 68,
+    "gameId": -1318893952
+  },
+  {
+    "name": "Thunder Res Jewel [1]",
+    "description": "A decoration that grants the Thunder Resistance skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 156,
+          "name": "Thunder Resistance"
+        },
+        "level": 1,
+        "description": "Thunder resistance +6",
+        "id": 409
+      }
+    ],
+    "icon": {
+      "color": "yellow",
+      "colorId": 10
+    },
+    "id": 69,
+    "gameId": -1267187456
+  },
+  {
+    "name": "Leap Jewel [1]",
+    "description": "A decoration that grants the Jump Master skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 76,
+          "name": "Jump Master"
+        },
+        "level": 1,
+        "description": "Negates knockback during jumps.",
+        "id": 187
+      }
+    ],
+    "icon": {
+      "color": "ultramarine",
+      "colorId": 18
+    },
+    "id": 80,
+    "gameId": -1139186816
+  },
+  {
+    "name": "Adapt Jewel [1]",
+    "description": "A decoration that grants the Adaptability skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 88,
+          "name": "Adaptability"
+        },
+        "level": 1,
+        "description": "Negates the effects of heat and cold.",
+        "id": 219
+      }
+    ],
+    "icon": {
+      "color": "gray",
+      "colorId": 2
+    },
+    "id": 82,
+    "gameId": -1113106688
+  },
+  {
+    "name": "Ice Res Jewel [1]",
+    "description": "A decoration that grants the Ice Resistance skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 101,
+          "name": "Ice Resistance"
+        },
+        "level": 1,
+        "description": "Ice resistance +6",
+        "id": 252
+      }
+    ],
+    "icon": {
+      "color": "white",
+      "colorId": 1
+    },
+    "id": 86,
+    "gameId": -1072040640
+  },
+  {
+    "name": "Antipara Jewel [1]",
+    "description": "A decoration that grants the Paralysis Resistance skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 92,
+          "name": "Paralysis Resistance"
+        },
+        "level": 1,
+        "description": "Reduces the duration of paralysis by 30%.",
+        "id": 230
+      }
+    ],
+    "icon": {
+      "color": "yellow",
+      "colorId": 10
+    },
+    "id": 90,
+    "gameId": -1016655360
+  },
+  {
+    "name": "Wind Resist Jewel [1]",
+    "description": "A decoration that grants the Windproof skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 35,
+          "name": "Windproof"
+        },
+        "level": 1,
+        "description": "Negates minor wind pressure and halves the effects of major wind pressure.",
+        "id": 79
+      }
+    ],
+    "icon": {
+      "color": "white",
+      "colorId": 1
+    },
+    "id": 104,
+    "gameId": -725659840
+  },
+  {
+    "name": "Refresh Jewel [2]",
+    "description": "A decoration that grants the Stamina Surge skill.",
+    "value": 200,
+    "slot": 2,
+    "rarity": 4,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 58,
+          "name": "Stamina Surge"
+        },
+        "level": 1,
+        "description": "Stamina recovery speed +10%",
+        "id": 142
+      }
+    ],
+    "icon": {
+      "color": "ivory",
+      "colorId": 9
+    },
+    "id": 112,
+    "gameId": -673317952
+  },
+  {
+    "name": "Growth Jewel [1]",
+    "description": "A decoration that grants the Self-Improvement skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 138,
+          "name": "Self-Improvement"
+        },
+        "level": 1,
+        "description": "Activates skill effect.",
+        "id": 361
+      }
+    ],
+    "icon": {
+      "color": "purple",
+      "colorId": 20
+    },
+    "id": 117,
+    "gameId": -590616064
+  },
+  {
+    "name": "Protection Jewel [1]",
+    "description": "A decoration that grants the Divine Blessing skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 122,
+          "name": "Divine Blessing"
+        },
+        "level": 1,
+        "description": "While active, reduces damage taken by 15%.",
+        "id": 318
+      }
+    ],
+    "icon": {
+      "color": "blue",
+      "colorId": 17
+    },
+    "id": 120,
+    "gameId": -534202944
+  },
+  {
+    "name": "Chain Jewel [3]",
+    "description": "A decoration that grants the Burst skill.",
+    "value": 250,
+    "slot": 3,
+    "rarity": 5,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 95,
+          "name": "Burst"
+        },
+        "level": 1,
+        "description": "On first hit, gain a small temporary attack and element boost, replaced by a larger boost after the fifth hit.",
+        "id": 236
+      }
+    ],
+    "icon": {
+      "color": "red",
+      "colorId": 5
+    },
+    "id": 129,
+    "gameId": -447558304
+  },
+  {
+    "name": "Brace Jewel [1]",
+    "description": "A decoration that grants the Flinch Free skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 108,
+          "name": "Flinch Free"
+        },
+        "level": 1,
+        "description": "Prevents knockbacks.",
+        "id": 271
+      }
+    ],
+    "icon": {
+      "color": "gray",
+      "colorId": 2
+    },
+    "id": 131,
+    "gameId": -417484064
+  },
+  {
+    "name": "Dive Jewel [1]",
+    "description": "A decoration that grants the Leap of Faith skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 28,
+          "name": "Leap of Faith"
+        },
+        "level": 1,
+        "description": "Enables skill use.",
+        "id": 63
+      }
+    ],
+    "icon": {
+      "color": "sky",
+      "colorId": 16
+    },
+    "id": 132,
+    "gameId": -394478144
+  },
+  {
+    "name": "Antidote Jewel [1]",
+    "description": "A decoration that grants the Poison Resistance skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 128,
+          "name": "Poison Resistance"
+        },
+        "level": 1,
+        "description": "Reduces the number of times you take poison damage.",
+        "id": 335
+      }
+    ],
+    "icon": {
+      "color": "purple",
+      "colorId": 20
+    },
+    "id": 134,
+    "gameId": -384925600
+  },
+  {
+    "name": "Bomber Jewel [1]",
+    "description": "A decoration that grants the Bombardier skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 37,
+          "name": "Bombardier"
+        },
+        "level": 1,
+        "description": "Explosive power +10%",
+        "id": 85
+      }
+    ],
+    "icon": {
+      "color": "vermilion",
+      "colorId": 6
+    },
+    "id": 135,
+    "gameId": -325572000
+  },
+  {
+    "name": "Geology Jewel [1]",
+    "description": "A decoration that grants the Geologist skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 98,
+          "name": "Geologist"
+        },
+        "level": 1,
+        "description": "One extra item when gathering from bonepiles.",
+        "id": 243
+      }
+    ],
+    "icon": {
+      "color": "ivory",
+      "colorId": 9
+    },
+    "id": 136,
+    "gameId": -316552800
+  },
+  {
+    "name": "Sheath Jewel [1]",
+    "description": "A decoration that grants the Quick Sheathe skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 32,
+          "name": "Quick Sheathe"
+        },
+        "level": 1,
+        "description": "Slightly increases sheathing speed.",
+        "id": 72
+      }
+    ],
+    "icon": {
+      "color": "brown",
+      "colorId": 8
+    },
+    "id": 141,
+    "gameId": -198925264
+  },
+  {
+    "name": "Satiated Jewel [1]",
+    "description": "A decoration that grants the Free Meal skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 111,
+          "name": "Free Meal"
+        },
+        "level": 1,
+        "description": "Activates 10% of the time.",
+        "id": 279
+      }
+    ],
+    "icon": {
+      "color": "ivory",
+      "colorId": 9
+    },
+    "id": 143,
+    "gameId": -177096704
+  },
+  {
+    "name": "Fungiform Jewel [2]",
+    "description": "A decoration that grants the Mushroomancer skill.",
+    "value": 200,
+    "slot": 2,
+    "rarity": 4,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 52,
+          "name": "Mushroomancer"
+        },
+        "level": 1,
+        "description": "Lets you digest blue mushrooms and toadstools.",
+        "id": 125
+      }
+    ],
+    "icon": {
+      "color": "purple",
+      "colorId": 20
+    },
+    "id": 152,
+    "gameId": -35111916
+  },
+  {
+    "name": "Defense Jewel [1]",
+    "description": "A decoration that grants the Defense Boost skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 118,
+          "name": "Defense Boost"
+        },
+        "level": 1,
+        "description": "Defense +5",
+        "id": 298
+      }
+    ],
+    "icon": {
+      "color": "brown",
+      "colorId": 8
+    },
+    "id": 241,
+    "gameId": 5672852
+  },
+  {
+    "name": "Ranger Jewel [1]",
+    "description": "A decoration that grants the Outdoorsman skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 143,
+          "name": "Outdoorsman"
+        },
+        "level": 1,
+        "description": "Improves fishing, grilling, and transporting abilities.",
+        "id": 374
+      }
+    ],
+    "icon": {
+      "color": "ivory",
+      "colorId": 9
+    },
+    "id": 250,
+    "gameId": 72596768
+  },
+  {
+    "name": "Flawless Jewel [2]",
+    "description": "A decoration that grants the Peak Performance skill.",
+    "value": 200,
+    "slot": 2,
+    "rarity": 4,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 154,
+          "name": "Peak Performance"
+        },
+        "level": 1,
+        "description": "Attack +3 while active.",
+        "id": 403
+      }
+    ],
+    "icon": {
+      "color": "red",
+      "colorId": 5
+    },
+    "id": 260,
+    "gameId": 213184688
+  },
+  {
+    "name": "Medicine Jewel [1]",
+    "description": "A decoration that grants the Recovery Up skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 30,
+          "name": "Recovery Up"
+        },
+        "level": 1,
+        "description": "Slightly increases recovery.",
+        "id": 66
+      }
+    ],
+    "icon": {
+      "color": "green",
+      "colorId": 14
+    },
+    "id": 270,
+    "gameId": 454747104
+  },
+  {
+    "name": "Furor Jewel [2]",
+    "description": "A decoration that grants the Resentment skill.",
+    "value": 200,
+    "slot": 2,
+    "rarity": 4,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 123,
+          "name": "Resentment"
+        },
+        "level": 1,
+        "description": "Attack +5 while active.",
+        "id": 321
+      }
+    ],
+    "icon": {
+      "color": "rose",
+      "colorId": 3
+    },
+    "id": 274,
+    "gameId": 519959680
+  },
+  {
+    "name": "Gobbler Jewel [1]",
+    "description": "A decoration that grants the Speed Eating skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 100,
+          "name": "Speed Eating"
+        },
+        "level": 1,
+        "description": "Moderately increases eating speed.",
+        "id": 249
+      }
+    ],
+    "icon": {
+      "color": "brown",
+      "colorId": 8
+    },
+    "id": 280,
+    "gameId": 645053056
+  },
+  {
+    "name": "Ambush Jewel [2]",
+    "description": "A decoration that grants the Ambush skill.",
+    "value": 200,
+    "slot": 2,
+    "rarity": 4,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 67,
+          "name": "Ambush"
+        },
+        "level": 1,
+        "description": "Attack +5% while active.",
+        "id": 163
+      }
+    ],
+    "icon": {
+      "color": "purple",
+      "colorId": 20
+    },
+    "id": 282,
+    "gameId": 656487488
+  },
+  {
+    "name": "Phoenix Jewel [2]",
+    "description": "A decoration that grants the Coalescence skill.",
+    "value": 350,
+    "slot": 2,
+    "rarity": 7,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 13,
+          "name": "Coalescence"
+        },
+        "level": 1,
+        "description": "When active, grants a slight increase to elemental attack and status buildup.",
+        "id": 28
+      }
+    ],
+    "icon": {
+      "color": "purple",
+      "colorId": 20
+    },
+    "id": 283,
+    "gameId": 668852032
+  },
+  {
+    "name": "Steadfast Jewel [1]",
+    "description": "A decoration that grants the Stun Resistance skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 105,
+          "name": "Stun Resistance"
+        },
+        "level": 1,
+        "description": "Reduces the duration of stun by 30%.",
+        "id": 264
+      }
+    ],
+    "icon": {
+      "color": "yellow",
+      "colorId": 10
+    },
+    "id": 284,
+    "gameId": 694060672
+  },
+  {
+    "name": "Antiblast Jewel [1]",
+    "description": "A decoration that grants the Blast Resistance skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 110,
+          "name": "Blast Resistance"
+        },
+        "level": 1,
+        "description": "Delays blastblight and reduces blast damage.",
+        "id": 276
+      }
+    ],
+    "icon": {
+      "color": "vermilion",
+      "colorId": 6
+    },
+    "id": 285,
+    "gameId": 701807872
+  },
+  {
+    "name": "Tenderizer Jewel [3]",
+    "description": "A decoration that grants the Weakness Exploit skill.",
+    "value": 250,
+    "slot": 3,
+    "rarity": 5,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 57,
+          "name": "Weakness Exploit"
+        },
+        "level": 1,
+        "description": "Attacks that hit weak points gain affinity +5%, with an extra 3% on wounds.",
+        "id": 137
+      }
+    ],
+    "icon": {
+      "color": "dark-purple",
+      "colorId": 21
+    },
+    "id": 288,
+    "gameId": 767051200
+  },
+  {
+    "name": "Shockproof Jewel [1]",
+    "description": "A decoration that grants the Shock Absorber skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 45,
+          "name": "Shock Absorber"
+        },
+        "level": 1,
+        "description": "Activates skill effect.",
+        "id": 107
+      }
+    ],
+    "icon": {
+      "color": "gray",
+      "colorId": 2
+    },
+    "id": 293,
+    "gameId": 865685248
+  },
+  {
+    "name": "Throttle Jewel [3]",
+    "description": "A decoration that grants the Latent Power skill.",
+    "value": 250,
+    "slot": 3,
+    "rarity": 5,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 142,
+          "name": "Latent Power"
+        },
+        "level": 1,
+        "description": "While active, affinity +10% and reduces stamina depletion by 30%.",
+        "id": 369
+      }
+    ],
+    "icon": {
+      "color": "red",
+      "colorId": 5
+    },
+    "id": 302,
+    "gameId": 948977536
+  },
+  {
+    "name": "Perfume Jewel [1]",
+    "description": "A decoration that grants the Stench Resistance skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 55,
+          "name": "Stench Resistance"
+        },
+        "level": 1,
+        "description": "Reduces stench duration by 50%.",
+        "id": 133
+      }
+    ],
+    "icon": {
+      "color": "brown",
+      "colorId": 8
+    },
+    "id": 303,
+    "gameId": 949857152
+  },
+  {
+    "name": "Maintenance Jewel [2]",
+    "description": "A decoration that grants the Tool Specialist skill.",
+    "value": 200,
+    "slot": 2,
+    "rarity": 4,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 90,
+          "name": "Tool Specialist"
+        },
+        "level": 1,
+        "description": "Shortens recharge time by 10%.",
+        "id": 222
+      }
+    ],
+    "icon": {
+      "color": "ivory",
+      "colorId": 9
+    },
+    "id": 304,
+    "gameId": 954350400
+  },
+  {
+    "name": "Flash Jewel [1]",
+    "description": "A decoration that grants the Blindsider skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 61,
+          "name": "Blindsider"
+        },
+        "level": 1,
+        "description": "Improves the effectiveness of flash attacks and items.",
+        "id": 151
+      }
+    ],
+    "icon": {
+      "color": "yellow",
+      "colorId": 10
+    },
+    "id": 321,
+    "gameId": 1230875008
+  },
+  {
+    "name": "Counter Jewel [2]",
+    "description": "A decoration that grants the Counterstrike skill.",
+    "value": 200,
+    "slot": 2,
+    "rarity": 4,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 81,
+          "name": "Counterstrike"
+        },
+        "level": 1,
+        "description": "Attack +10 while active.",
+        "id": 200
+      }
+    ],
+    "icon": {
+      "color": "red",
+      "colorId": 5
+    },
+    "id": 323,
+    "gameId": 1305797760
+  },
+  {
+    "name": "Potential Jewel [2]",
+    "description": "A decoration that grants the Heroics skill.",
+    "value": 200,
+    "slot": 2,
+    "rarity": 4,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 87,
+          "name": "Heroics"
+        },
+        "level": 1,
+        "description": "Defense +50 while active.",
+        "id": 214
+      }
+    ],
+    "icon": {
+      "color": "red",
+      "colorId": 5
+    },
+    "id": 328,
+    "gameId": 1414248576
+  },
+  {
+    "name": "Evasion Jewel [2]",
+    "description": "A decoration that grants the Evade Window skill.",
+    "value": 200,
+    "slot": 2,
+    "rarity": 4,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 77,
+          "name": "Evade Window"
+        },
+        "level": 1,
+        "description": "Very slightly increases invulnerability window.",
+        "id": 188
+      }
+    ],
+    "icon": {
+      "color": "sky",
+      "colorId": 16
+    },
+    "id": 332,
+    "gameId": 1478235520
+  },
+  {
+    "name": "Counterattack Jewel [3]",
+    "description": "A decoration that grants the Adrenaline Rush skill.",
+    "value": 250,
+    "slot": 3,
+    "rarity": 5,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 120,
+          "name": "Adrenaline Rush"
+        },
+        "level": 1,
+        "description": "Attack +10 while active.",
+        "id": 310
+      }
+    ],
+    "icon": {
+      "color": "red",
+      "colorId": 5
+    },
+    "id": 337,
+    "gameId": 1598502400
+  },
+  {
+    "name": "Friendship Jewel [1]",
+    "description": "A decoration that grants the Wide-Range skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 113,
+          "name": "Wide-Range"
+        },
+        "level": 1,
+        "description": "Items affect nearby allies with 33% of their efficacy.",
+        "id": 286
+      }
+    ],
+    "icon": {
+      "color": "white",
+      "colorId": 1
+    },
+    "id": 341,
+    "gameId": 1731714432
+  },
+  {
+    "name": "Sprinter Jewel [1]",
+    "description": "A decoration that grants the Marathon Runner skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 43,
+          "name": "Marathon Runner"
+        },
+        "level": 1,
+        "description": "Reduces continuous stamina depletion by 15%.",
+        "id": 103
+      }
+    ],
+    "icon": {
+      "color": "brown",
+      "colorId": 8
+    },
+    "id": 342,
+    "gameId": 1738329216
+  },
+  {
+    "name": "Climber Jewel [1]",
+    "description": "A decoration that grants the Cliffhanger skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 42,
+          "name": "Cliffhanger"
+        },
+        "level": 1,
+        "description": "Reduces stamina depletion while climbing by 50%.",
+        "id": 102
+      }
+    ],
+    "icon": {
+      "color": "ivory",
+      "colorId": 9
+    },
+    "id": 349,
+    "gameId": 1933586560
+  },
+  {
+    "name": "Botany Jewel [1]",
+    "description": "A decoration that grants the Botanist skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 112,
+          "name": "Botanist"
+        },
+        "level": 1,
+        "description": "One extra consumable herb item per gather.",
+        "id": 282
+      }
+    ],
+    "icon": {
+      "color": "sage-green",
+      "colorId": 12
+    },
+    "id": 351,
+    "gameId": 1979979520
+  },
+  {
+    "name": "Challenger Jewel [3]",
+    "description": "A decoration that grants the Agitator skill.",
+    "value": 250,
+    "slot": 3,
+    "rarity": 5,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 144,
+          "name": "Agitator"
+        },
+        "level": 1,
+        "description": "Attack +4 and affinity +3% while active.",
+        "id": 375
+      }
+    ],
+    "icon": {
+      "color": "red",
+      "colorId": 5
+    },
+    "id": 352,
+    "gameId": 2003488640
+  },
+  {
+    "name": "Enduring Jewel [1]",
+    "description": "A decoration that grants the Item Prolonger skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 15,
+          "name": "Item Prolonger"
+        },
+        "level": 1,
+        "description": "Item effect duration +10%",
+        "id": 36
+      }
+    ],
+    "icon": {
+      "color": "ivory",
+      "colorId": 9
+    },
+    "id": 356,
+    "gameId": 2074953216
+  },
+  {
+    "name": "Footing Jewel [1]",
+    "description": "A decoration that grants the Tremor Resistance skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 46,
+          "name": "Tremor Resistance"
+        },
+        "level": 1,
+        "description": "Nullifies very minor ground tremors and halves effects of minor ground tremors.",
+        "id": 108
+      }
+    ],
+    "icon": {
+      "color": "gray",
+      "colorId": 2
+    },
+    "id": 359,
+    "gameId": 2099419520
+  },
+  {
+    "name": "Intimidator Jewel [1]",
+    "description": "A decoration that grants the Intimidator skill.",
+    "value": 150,
+    "slot": 1,
+    "rarity": 3,
+    "kind": "armor",
+    "skills": [
+      {
+        "skill": {
+          "id": 130,
+          "name": "Intimidator"
+        },
+        "level": 1,
+        "description": "Discourages monsters from engaging you even if you've been spotted.",
+        "id": 341
+      }
+    ],
+    "icon": {
+      "color": "white",
+      "colorId": 1
+    },
+    "id": 361,
+    "gameId": 2145184512
+  }
+]
