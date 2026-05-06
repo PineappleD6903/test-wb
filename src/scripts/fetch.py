@@ -2,10 +2,12 @@ import requests
 import json
 import time
 from pathlib import Path
+from db_manager import DatabaseManager
 
 # Configuration
 BASE_URL = "https://wilds.mhdb.io/en"  # Change 'en' to your preferred locale (e.g., 'ja')
-OUTPUT_DIR = Path("mh_wilds_data")
+ROOT_DIR = Path(__file__).resolve().parent.parent.parent
+OUTPUT_DIR = ROOT_DIR / "mh_wilds_data"
 LIMIT = 200  # Max items per request (API supports high values; adjust if needed)
 DELAY = 0.2   # Small delay to be respectful (caching is enabled on the API side)
 
@@ -56,47 +58,59 @@ def save_json(data: list, filename: str):
         json.dump(data, f, ensure_ascii=False, indent=2)
     print(f"Saved {len(data)} items to {filepath}")
 
+def ingest_all_to_db(armor, armor_sets, decorations, skills):
+    db = DatabaseManager()
+    db.connect()
+    
+    print("\n📥 Ingesting into database...")
+    
+    print(" - Skills...")
+    for s in skills:
+        db.save_skill(s)
+        
+    print(" - Armor Sets...")
+    for s in armor_sets:
+        db.save_armor_set(s)
+        
+    print(" - Armor Pieces...")
+    for a in armor:
+        db.insert_armor(a)
+        
+    print(" - Decorations...")
+    for d in decorations:
+        db.insert_decoration(d)
+        
+    db.conn.commit()
+    db.close()
+    print("✅ All data ingested into database (mh_wilds.db).")
+
 def main():
     print("Starting data fetch from Monster Hunter Wilds API...\n")
     
-    # 1. Fetch all armor pieces (individual pieces like head, chest, etc.)
-    print("Fetching all armor pieces...")
+    # 1. Fetch skills first (dependencies for others)
+    print("Fetching all skills...")
+    skills = fetch_all("skills")
+    save_json(skills, "skills.json")
+    
+    # 2. Fetch all armor pieces
+    print("\nFetching all armor pieces...")
     armor = fetch_all("armor")
     save_json(armor, "armor_pieces.json")
     
-    # Optional: Fetch with projection to reduce size (useful for build calculator)
-    # armor_light = fetch_all("armor", projection={"id": True, "name": True, "kind": True, "rarity": True,
-    #                                             "slots": True, "skills": True, "armorSet": True})
-    # save_json(armor_light, "armor_pieces_light.json")
-    
-    # 2. Fetch all armor sets
+    # 3. Fetch all armor sets
     print("\nFetching all armor sets...")
     armor_sets = fetch_all("armor/sets")
     save_json(armor_sets, "armor_sets.json")
     
-    # 3. Fetch all decorations (armor + weapon decorations)
+    # 4. Fetch all decorations
     print("\nFetching all decorations...")
     decorations = fetch_all("decorations")
     save_json(decorations, "decorations.json")
     
-    # Optional: Filter only armor decorations
-    print("\nFetching armor-only decorations...")
-    armor_decor_params = {"q": json.dumps({"kind": "armor"})}
-    armor_decorations = fetch_all("decorations", params=armor_decor_params)
-    save_json(armor_decorations, "decorations_armor.json")
+    # Ingest everything to DB
+    ingest_all_to_db(armor, armor_sets, decorations, skills)
     
-    # Bonus: Fetch skills (very useful for build crafting)
-    print("\nFetching all skills...")
-    skills = fetch_all("skills")
-    save_json(skills, "skills.json")
-    
-    print("\n✅ All data fetched and saved successfully!")
-    print(f"Output directory: {OUTPUT_DIR.resolve()}")
-    print("\nRecommended files for your build craft site:")
-    print(" - armor_pieces.json")
-    print(" - armor_sets.json")
-    print(" - decorations.json (or decorations_armor.json)")
-    print(" - skills.json")
+    print("\n✅ All data fetched, saved, and ingested successfully!")
 
 if __name__ == "__main__":
     try:

@@ -1,14 +1,28 @@
 import React, { useState } from 'react';
 import { Shield, Sparkles, Search } from 'lucide-react';
+import { getItemIconPath } from '../utils/itemIcons';
 
 function ItemSelectorModal({ isOpen, onClose, items, category, onSelect }) {
   const [searchTerm, setSearchTerm] = useState('');
+  const [selectedKind, setSelectedKind] = useState(null);
+
+  // Reset filters when modal opens/closes or category changes
+  React.useEffect(() => {
+    if (!isOpen) {
+      setSearchTerm('');
+      setSelectedKind(null);
+    }
+  }, [isOpen, category]);
 
   if (!isOpen) return null;
 
-  const filteredItems = items.filter(item => 
-    item.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const kinds = category === 'weapon' ? [...new Set(items.map(item => item.kind).filter(Boolean))] : [];
+
+  const filteredItems = items.filter(item => {
+    const matchesSearch = item.name.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesKind = !selectedKind || item.kind === selectedKind;
+    return matchesSearch && matchesKind;
+  });
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -29,28 +43,64 @@ function ItemSelectorModal({ isOpen, onClose, items, category, onSelect }) {
           />
         </div>
 
-        <div className="item-list">
-          {filteredItems.map(item => (
-            <div key={item.id} className="item-row" onClick={() => { onSelect(item); onClose(); }}>
-              <div className="item-main">
-                <span className="item-name">{item.name}</span>
-                {item.defense?.base && <span className="item-stat"><Shield size={14} className="icon"/> {item.defense.base} Def</span>}
-                {item.damage?.raw && <span className="item-stat"><Sparkles size={14} className="icon"/> {item.damage.raw} Atk</span>}
-              </div>
-              
-              <div className="item-sub">
-                 {item.slots && item.slots.length > 0 && (
-                   <span className="slots-preview">Slots: [{item.slots.join(', ')}]</span>
-                 )}
-              </div>
+        {kinds.length > 0 && (
+          <div className="kind-filters custom-scrollbar">
+            <button 
+              className={`kind-btn ${!selectedKind ? 'active' : ''}`}
+              onClick={() => setSelectedKind(null)}
+              title="All Weapon Types"
+            >
+              ALL
+            </button>
+            {kinds.map(kind => {
+              const iconPath = getItemIconPath({ kind });
+              const displayName = kind.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+              return (
+                <button 
+                  key={kind}
+                  className={`kind-btn ${selectedKind === kind ? 'active' : ''}`}
+                  onClick={() => setSelectedKind(kind)}
+                  title={displayName}
+                >
+                  {iconPath ? (
+                    <img src={iconPath} alt={displayName} className="filter-icon" />
+                  ) : (
+                    displayName
+                  )}
+                </button>
+              );
+            })}
+          </div>
+        )}
 
-              <div className="item-skills mt-1">
-                {item.skills && item.skills.map((s, idx) => (
-                  <span key={idx} className="skill-badge">{s.skill.name} +{s.level}</span>
-                ))}
+        <div className="item-list custom-scrollbar">
+          {filteredItems.map(item => {
+            const itemIcon = getItemIconPath(item);
+            return (
+              <div key={item.id} className="item-row" onClick={() => { onSelect(item); onClose(); }}>
+                <div className="item-main">
+                  <div className="item-name-container">
+                    {itemIcon && <img src={itemIcon} alt="" className="item-icon" />}
+                    <span className="item-name">{item.name}</span>
+                  </div>
+                  {item.defense?.base && <span className="item-stat"><Shield size={14} className="icon"/> {item.defense.base} Def</span>}
+                  {item.damage?.raw && <span className="item-stat"><Sparkles size={14} className="icon"/> {item.damage.raw} Atk</span>}
+                </div>
+                
+                <div className="item-sub">
+                   {item.slots && item.slots.length > 0 && (
+                     <span className="slots-preview">Slots: [{item.slots.join(', ')}]</span>
+                   )}
+                </div>
+
+                <div className="item-skills mt-1">
+                  {item.skills && item.skills.map((s, idx) => (
+                    <span key={idx} className="skill-badge">{s.skill.name} +{s.level}</span>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
           {filteredItems.length === 0 && <div className="empty-state">No items found.</div>}
         </div>
       </div>
@@ -64,7 +114,7 @@ function ItemSelectorModal({ isOpen, onClose, items, category, onSelect }) {
           display: flex;
           justify-content: center;
           align-items: center;
-          z-index: 100;
+          z-index: 1000;
         }
 
         .modal-content {
@@ -85,6 +135,7 @@ function ItemSelectorModal({ isOpen, onClose, items, category, onSelect }) {
           align-items: center;
           padding: 20px;
           border-bottom: 1px solid var(--border-color);
+          flex-shrink: 0;
         }
 
         .modal-header h2 { text-transform: capitalize; margin: 0; }
@@ -95,6 +146,7 @@ function ItemSelectorModal({ isOpen, onClose, items, category, onSelect }) {
           padding: 15px 20px;
           border-bottom: 1px solid var(--border-color);
           background: rgba(0,0,0,0.2);
+          flex-shrink: 0;
         }
         
         .search-input {
@@ -111,6 +163,8 @@ function ItemSelectorModal({ isOpen, onClose, items, category, onSelect }) {
           padding: 10px;
           overflow-y: auto;
           flex-grow: 1;
+          background: var(--bg-panel);
+          position: relative;
         }
 
         .item-row {
@@ -128,10 +182,22 @@ function ItemSelectorModal({ isOpen, onClose, items, category, onSelect }) {
           margin-bottom: 4px;
         }
 
+        .item-name-container {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          flex-grow: 1;
+        }
+
+        .item-icon {
+          height: 20px;
+          width: auto;
+          filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.1));
+        }
+
         .item-name {
           font-weight: 600;
           color: var(--text-highlight);
-          flex-grow: 1;
           font-size: 1.05rem;
         }
 
@@ -166,6 +232,79 @@ function ItemSelectorModal({ isOpen, onClose, items, category, onSelect }) {
         
         .mt-1 { margin-top: 5px; }
         .icon { opacity: 0.7; }
+
+        .kind-filters {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
+          gap: 8px;
+          padding: 12px 20px;
+          background: rgba(0,0,0,0.3);
+          border-bottom: 1px solid var(--border-color);
+          max-height: 160px;
+          overflow-y: auto;
+          flex-shrink: 0;
+        }
+
+        .kind-btn {
+          background: rgba(255,255,255,0.03);
+          border: 1px solid rgba(255,255,255,0.1);
+          color: var(--text-muted);
+          height: 48px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 4px;
+          font-size: 0.7rem;
+          font-weight: 700;
+          cursor: pointer;
+          transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+          position: relative;
+        }
+
+        .filter-icon {
+          height: 28px;
+          width: auto;
+          opacity: 0.6;
+          transition: all 0.2s ease;
+          filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+        }
+
+        .kind-btn:hover {
+          background: rgba(255,255,255,0.08);
+          border-color: rgba(255,255,255,0.2);
+          transform: translateY(-2px);
+        }
+
+        .kind-btn:hover .filter-icon {
+          opacity: 1;
+          transform: scale(1.1);
+        }
+
+        .kind-btn.active {
+          background: rgba(212, 175, 55, 0.15);
+          border-color: var(--accent-gold);
+          color: var(--accent-gold);
+          box-shadow: 0 0 15px rgba(212, 175, 55, 0.1), inset 0 0 5px rgba(212, 175, 55, 0.1);
+        }
+
+        .kind-btn.active .filter-icon {
+          opacity: 1;
+          filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.4));
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: rgba(0,0,0,0.1);
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: rgba(212, 175, 55, 0.3);
+          border-radius: 2px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background: rgba(212, 175, 55, 0.5);
+        }
       `}</style>
     </div>
   );

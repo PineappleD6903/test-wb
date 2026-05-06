@@ -1,36 +1,47 @@
 import React from 'react';
+import { getItemIconPath } from '../utils/itemIcons';
 
 function EquipmentSlot({ label, type, item, onClick, onSlotClick }) {
   const hasItem = item && item.id !== `none_${type}`;
+  const itemIcon = hasItem ? getItemIconPath(item) : getItemIconPath(type);
   
   return (
     <div className="equipment-slot" onClick={onClick}>
       <div className="slot-label">{label}</div>
       <div className="slot-content">
-        {hasItem ? (
-          <div className="item-details">
-            <span className="item-name">{item.name}</span>
-            {item.slots && item.slots.length > 0 && (
-              <div className="slots-container" onClick={e => e.stopPropagation()}>
-                {item.slots.map((s, idx) => {
-                  const deco = item.slottedDecorations ? item.slottedDecorations[idx] : null;
-                  return (
-                    <div 
-                      key={idx} 
-                      className={`deco-slot level-${s} ${deco ? 'filled' : ''}`}
-                      onClick={(e) => { e.stopPropagation(); onSlotClick(type, idx, s); }}
-                      title={deco ? deco.name : `Level ${s} Slot`}
-                    >
-                      {deco ? 'D' : s}
-                    </div>
-                  );
-                })}
-              </div>
+        <div className="item-details">
+          <div className="item-name-container">
+            {itemIcon && (
+              <img 
+                src={itemIcon} 
+                alt="" 
+                className={`item-icon ${!hasItem ? 'placeholder' : ''}`} 
+              />
+            )}
+            {hasItem ? (
+              <span className="item-name">{item.name}</span>
+            ) : (
+              <span className="empty-slot">Select {label}...</span>
             )}
           </div>
-        ) : (
-          <span className="empty-slot">Select {label}...</span>
-        )}
+          {hasItem && item.slots && item.slots.length > 0 && (
+            <div className="slots-container" onClick={e => e.stopPropagation()}>
+              {item.slots.map((s, idx) => {
+                const deco = item.slottedDecorations ? item.slottedDecorations[idx] : null;
+                return (
+                  <div 
+                    key={idx} 
+                    className={`deco-slot level-${s} ${deco ? 'filled' : ''}`}
+                    onClick={(e) => { e.stopPropagation(); onSlotClick(type, idx, s); }}
+                    title={deco ? deco.name : `Level ${s} Slot`}
+                  >
+                    {deco ? 'D' : s}
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
       </div>
 
       <style>{`
@@ -70,6 +81,29 @@ function EquipmentSlot({ label, type, item, onClick, onSlotClick }) {
           align-items: center;
         }
 
+        .item-name-container {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+
+        .item-icon {
+          height: 24px;
+          width: auto;
+          filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));
+          transition: all 0.2s ease;
+        }
+
+        .item-icon.placeholder {
+          opacity: 0.2;
+          filter: grayscale(1) brightness(0.5);
+        }
+
+        .equipment-slot:hover .item-icon.placeholder {
+          opacity: 0.4;
+          filter: grayscale(0.5) brightness(0.8);
+        }
+
         .item-name {
           color: var(--text-highlight);
           font-weight: 600;
@@ -78,6 +112,7 @@ function EquipmentSlot({ label, type, item, onClick, onSlotClick }) {
         .empty-slot {
           color: #6b7280;
           font-style: italic;
+          font-size: 0.95rem;
         }
 
         .slots-container {
