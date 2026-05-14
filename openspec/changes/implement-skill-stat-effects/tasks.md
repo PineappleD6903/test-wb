@@ -11,5 +11,5 @@
 
 ## 3. UI and Verification
 
-- [ ] 3.1 Verify that the `StatsPanel` correctly reflects the new totals.
-- [ ] 3.2 Ensure "None" items (empty slots) do not break the calculation.
+- [x] 3.1 Verify that the `StatsPanel` correctly reflects the new totals.
+- [x] 3.2 Ensure "None" items (empty slots) do not break the calculation.

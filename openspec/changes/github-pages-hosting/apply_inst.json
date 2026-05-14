@@ -1,0 +1,58 @@
+﻿{
+  "changeName": "github-pages-hosting",
+  "changeDir": "F:\\test wb\\openspec\\changes\\github-pages-hosting",
+  "schemaName": "spec-driven",
+  "contextFiles": {
+    "proposal": [
+      "F:\\test wb\\openspec\\changes\\github-pages-hosting\\proposal.md"
+    ],
+    "specs": [
+      "F:\\test wb\\openspec\\changes\\github-pages-hosting\\specs\\github-pages-deployment\\spec.md"
+    ],
+    "design": [
+      "F:\\test wb\\openspec\\changes\\github-pages-hosting\\design.md"
+    ],
+    "tasks": [
+      "F:\\test wb\\openspec\\changes\\github-pages-hosting\\tasks.md"
+    ]
+  },
+  "progress": {
+    "total": 6,
+    "complete": 0,
+    "remaining": 6
+  },
+  "tasks": [
+    {
+      "id": "1",
+      "description": "1.1 Update `vite.config.js` to include the `base: './'` property so that built assets use relative paths.",
+      "done": false
+    },
+    {
+      "id": "2",
+      "description": "1.2 Modify `fetch` calls in `src/App.jsx` (e.g., `/data/weapons.json`) to use relative paths (`./data/weapons.json`) or prepend the base URL so they resolve correctly when hosted in a sub-directory.",
+      "done": false
+    },
+    {
+      "id": "3",
+      "description": "2.1 Create the directory structure `.github/workflows/` in the project root.",
+      "done": false
+    },
+    {
+      "id": "4",
+      "description": "2.2 Create a `deploy.yml` file within the workflows directory containing the standard Vite deployment action (checkout, setup node, install, build, and deploy to Pages).",
+      "done": false
+    },
+    {
+      "id": "5",
+      "description": "3.1 Run `npm run build` and `npm run preview` locally to ensure the built application still loads all assets and data correctly.",
+      "done": false
+    },
+    {
+      "id": "6",
+      "description": "3.2 Commit and push the changes to the `main` branch to trigger the GitHub Actions workflow, then verify the deployed site on GitHub Pages.",
+      "done": false
+    }
+  ],
+  "state": "ready",
+  "instruction": "Read context files, work through pending tasks, mark complete as you go.\nPause if you hit blockers or need clarification."
+}

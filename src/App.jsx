@@ -123,11 +123,11 @@ function App() {
     async function loadData() {
       try {
         const [weaponsRes, armorRes, skillsRes, decosRes, armorSetsRes] = await Promise.all([
-          fetch('/data/weapons.json'),
-          fetch('/data/armor.json'),
-          fetch('/data/skills.json'),
-          fetch('/data/decorations.json'),
-          fetch('/data/armor_sets.json')
+          fetch(`${import.meta.env.BASE_URL}data/weapons.json`),
+          fetch(`${import.meta.env.BASE_URL}data/armor.json`),
+          fetch(`${import.meta.env.BASE_URL}data/skills.json`),
+          fetch(`${import.meta.env.BASE_URL}data/decorations.json`),
+          fetch(`${import.meta.env.BASE_URL}data/armor_sets.json`)
         ]);
         
         const weaponsData = await weaponsRes.json();
