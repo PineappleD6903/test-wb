@@ -40,12 +40,12 @@ export const getItemIconPath = (itemOrType) => {
 
   // 1. Check Weapons Map
   if (WEAPON_ICON_MAP[identifier]) {
-    return `/image/weapons/${WEAPON_ICON_MAP[identifier]}`;
+    return `${import.meta.env.BASE_URL}image/weapons/${WEAPON_ICON_MAP[identifier]}`;
   }
 
   // 2. Check Armor Map
   if (ARMOR_ICON_MAP[identifier]) {
-    return `/image/armor/${ARMOR_ICON_MAP[identifier]}`;
+    return `${import.meta.env.BASE_URL}image/armor/${ARMOR_ICON_MAP[identifier]}`;
   }
 
   return null;
@@ -55,5 +55,5 @@ export const getItemIconPath = (itemOrType) => {
 export const getWeaponIconPath = (kind) => {
   const filename = WEAPON_ICON_MAP[kind];
   if (!filename) return null;
-  return `/image/weapons/${filename}`;
+  return `${import.meta.env.BASE_URL}image/weapons/${filename}`;
 };
